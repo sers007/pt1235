@@ -4,25 +4,25 @@ class Student:
         self.name = name
         self.gladness = 10
         self.progress = 0
-        self.maney = 400
+        self.money = 400
         self.alive = True
     def to_study(self):
         print("Time to study")
         self.progress += 0.15
         self.gladness -= 6
-        self.maney += 5
+        self.money += 5
     def to_sleep(self):
         print("I will sleep")
         self.gladness += 6
-        self.maney -= 4
+        self.money -= 4
     def to_chill(self):
         print("Rest time")
         self.gladness += 6
         self.progress -= 0.01
-        self.maney -= 5
+        self.money -= 5
     def to_job(self):
         print("Time to job")
-        self.maney += 1
+        self.money += 1
         self.progress +=0.05
         self.gladness -=0.09
 
@@ -36,7 +36,7 @@ class Student:
         elif self.progress >= 19:
             print("Passed externally…")
             self.alive = False
-        elif  self.maney <= 0:
+        elif  self.money <= 0:
             print("died of hunger")
             self.alive = False
 
@@ -45,7 +45,7 @@ class Student:
 
         print(f"Gladness = {self.gladness}")
         print(f"Progress ={round(self.progress, 2)}")
-        print(f"Maney  = {self.maney}")
+        print(f"Maney  = {self.money}")
 
     def live(self, day):
         day = "Day" + str(day) + "of" + self.name + "life"
