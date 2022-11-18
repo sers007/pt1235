@@ -28,8 +28,9 @@ class Auto:
 
 
 
-hum1 = Human("Jack")
-hum2 = Human("Lis")
+hum1 = Human("Sers")
+hum2 = Human("Jack")
+hum3 = Human("Dima")
 
 
 auto1 = Auto("Mercedes")
@@ -41,6 +42,8 @@ auto2.print_name_passenger()
 auto1.addpassenger(hum1)
 auto2.addpassenger(hum2)
 auto2.addpassenger(hum2)
+auto2.addpassenger(hum3)
+auto2.addpassenger(hum3)
 
 auto1.print_name_passenger()
 auto2.print_name_passenger()

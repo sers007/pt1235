@@ -1,6 +1,14 @@
 result = []
+def checker(key):
+    if type(key)  != str:
+        raise TypeError(f"Sorry,we can't work with{key},we need class str")
+    else:
+        return key
+
+
+
 def divider(a, b):
-     if a < b:
+    if a < b:
         raise ValueError
     if b > 100:
         raise IndexError
