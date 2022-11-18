@@ -40,6 +40,8 @@ auto1.print_name_passenger()
 auto2.print_name_passenger()
 
 auto1.addpassenger(hum1)
+auto1.addpassenger(hum2)
+auto1.addpassenger(hum3)
 auto2.addpassenger(hum2)
 auto2.addpassenger(hum2)
 auto2.addpassenger(hum3)
